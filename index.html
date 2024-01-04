@@ -1,0 +1,1211 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Neethu`s Portfolio</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Career Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" href="css/lightbox.css"><!-- for gallery css -->
+
+<!-- banner text effect css files -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+<!-- banner text effect css files -->
+
+<!-- Navigation-CSS --> <link rel="stylesheet" href="css/menu_sideslide.css"	type="text/css" media="all">
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /><!-- for testimonials -->
+
+<link href="css/bars.css" rel="stylesheet" type="text/css"><!-- for skills -->
+
+<!-- custom-theme files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //custom-theme files -->
+
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+
+<!-- googlefonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+<!-- //googlefonts -->
+<style>
+// Variables
+$red: #ad0000;
+$lightBlack: #333;
+$darkGrey: #a9a9a9;
+$ghostWhite: #f8f8ff;
+$lightGrey: #d3d3d3;
+
+// Mixins
+@mixin transition($property) {transition: $property .25s;}
+
+/*Typography*/
+html {font: 16px 'Open Sans Condensed', 'Roboto Condensed', Verdana, sans-serif;}
+h1 {font-size: 2.25em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.75em;}
+h4 {font-size: 1.5em;}
+p {font-size: 1.25em;}
+/*Layout*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {color: #333;}
+*,
+*:before,
+*:after {box-sizing: border-box;}
+.line {
+  float: left;
+  width: 100%;
+  border-top: .25em solid $lightBlack;
+}
+.wrapper {
+  margin: auto;
+  width: 60em;/*960px*/
+  //min-height: 100%;
+}
+header,
+nav,
+section,
+footer {
+  float: left;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: color .25s;
+}
+.button {
+  display: block;
+  padding: .75em 1.25em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $red;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  &:focus,
+  &:hover {background: darken($red, 7%);}
+  &:active {background: #c10000;}
+}
+.link {
+  font-weight: bold;
+  color: $red;
+  &:focus,
+  &:hover {color: darken($red, 10%);}
+  &:active {color: lighten($red, 5%);}
+}
+/*Navigation*/
+nav h1 {
+  float: left;
+  padding: .25em .25em 0 0;
+  font-size: 4.5em;
+  text-transform: uppercase;
+}
+nav h1 a {color: $red;}
+.nav-ul {
+  display: flex;
+}
+header li {width: 20%;}
+header li:not(:first-child) {margin-left: 2%;}
+header .nav-ul a {
+  display: block;
+  padding: 1.75em .5em;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $lightBlack;
+  &:focus,
+  &:hover {color: $red;}
+  &:active {color: lighten($red, 5%);}
+}
+header li:first-child a {
+  background: $red;
+  color: #fff;
+  &:hover {color: #fff;}
+}
+/*Sections*/
+section {margin: 1em 0;}
+section h1 {text-transform: uppercase;}
+hr {
+  border-color: $lightGrey;
+  border-style: dashed;
+}
+.vertical {
+  width: 0;
+  height: 10px;
+}
+/*Intro*/
+.sec-intro {position: relative;}
+.sec-intro img {
+  width: 100%;
+}
+.sec-intro h1 {
+  position: absolute;
+  bottom: .5em;
+  left: .5em;
+  padding: .5em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+/*Boxes*/
+.box {
+  float: left;
+  padding: 1.5em 1em;
+  width: 25%;
+  height: 400px;
+  border-top: .1em solid $lightGrey;
+  border-bottom: .1em solid $lightGrey;
+  border-left: .1em solid $lightGrey;
+  @include transition(background);
+  &:focus,
+  &:hover {background: #f5f5f5;}
+}
+.box:last-child {border-right: .1em solid $lightGrey;}
+.box h1 {text-align: center;}
+.box p {
+  margin-top: 4em;
+  height: 6em;
+  text-align: justify;
+}
+.box .button {
+  margin: 4em auto;
+}
+/*Events*/
+.sec-events > h1 {margin-top: 1em;}
+.sec-events article {
+  float: left;
+  padding: 0 .25em;
+  width: 25%;
+  text-align: justify;
+}
+.sec-events article h1,
+.sec-events article p {
+  display: block;
+  margin: .5em 0;
+  padding: .25em 1em;
+  font-size: 110%;
+}
+.sec-events article a {float: right;padding-right: 1em;}
+.sec-events article h1 {font-weight: bold;text-align: center;}
+/*Projects*/
+.sec-projects {width: 60%;}
+.sec-projects > h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+.sec-projects article {
+  padding: .5em 0;
+  width: 100%;
+}
+.sec-projects article h1,
+.sec-projects article p {font-size: 110%;}
+.sec-projects article h1 {font-weight: bold;}
+.sec-projects article p {
+  margin: .5em .5em .5em 0;
+  text-align: justify;
+}
+.sec-projects p a {float: right;}
+.sec-projects button {
+  position: relative;
+  left: 80%;
+}
+/*Standards*/
+.sec-standards {width: 40%;}
+.sec-standards > h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+.sec-standards article {
+  float: left;
+  padding: .5em 1em;
+  width: 50%;
+  text-align: justify;
+}
+.sec-standards article:last-child {padding: .5em 0;}
+.sec-standards article h1 {text-align: center;}
+/*Partners*/
+.sec-partners h1 {margin-top: 1em;}
+.sec-partners .row {
+  float: left;
+  margin: 2em 0;
+  width: 100%;
+}
+.logo-container {
+  float: left;
+  width: 16%;
+  width: 100px;
+}
+.logo-container:not(:first-child) {margin-left: 7.5%;}
+.logo-container:first-child {margin-top: .2em;}
+.logo-container:nth-of-type(2) img {margin-top: 1.2em}
+.logo-container:nth-of-type(3) img {margin-top: 1.8em;}
+.logo-container:nth-of-type(4) img {margin-top: 2.35em;}
+.logo-container:nth-of-type(5) img {margin-top: .35em;}
+.logo-container:last-of-type img {margin-top: .65em;}
+.sec-partners img {
+  float: left;
+  width: 100%;
+}
+/*Footer*/
+footer {
+  padding: 2em 0;
+  width: 100%;
+  text-align: center;
+  background: $lightGrey;
+}
+footer .nav-ul {justify-content: center;margin-bottom: 1em;}
+footer li:not(:first-child) {margin-left: .75em;}
+footer li:first-child a {color: $lightBlack;}
+footer a {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: $darkGrey;
+  &:focus,
+  &:hover {color: $lightBlack;}
+}
+.copy {font-size: .85em;}
+// Variables
+$red: #ad0000;
+$lightBlack: #333;
+$darkGrey: #a9a9a9;
+$ghostWhite: #f8f8ff;
+$lightGrey: #d3d3d3;
+
+// Mixins
+@mixin transition($property) {transition: $property .25s;}
+
+/*Typography*/
+html {font: 16px 'Open Sans Condensed', 'Roboto Condensed', Verdana, sans-serif;}
+h1 {font-size: 2.25em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.75em;}
+h4 {font-size: 1.5em;}
+p {font-size: 1.25em;}
+/*Layout*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {color: #333;}
+*,
+*:before,
+*:after {box-sizing: border-box;}
+.line {
+  float: left;
+  width: 100%;
+  border-top: .25em solid $lightBlack;
+}
+.wrapper {
+  margin: auto;
+  width: 60em;/*960px*/
+  //min-height: 100%;
+}
+header,
+nav,
+section,
+footer {
+  float: left;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: color .25s;
+}
+.button {
+  display: block;
+  padding: .75em 1.25em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $red;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  &:focus,
+  &:hover {background: darken($red, 7%);}
+  &:active {background: #c10000;}
+}
+.link {
+  font-weight: bold;
+  color: $red;
+  &:focus,
+  &:hover {color: darken($red, 10%);}
+  &:active {color: lighten($red, 5%);}
+}
+/*Navigation*/
+nav h1 {
+  float: left;
+  padding: .25em .25em 0 0;
+  font-size: 4.5em;
+  text-transform: uppercase;
+}
+nav h1 a {color: $red;}
+.nav-ul {
+  display: flex;
+}
+header li {width: 20%;}
+header li:not(:first-child) {margin-left: 2%;}
+header .nav-ul a {
+  display: block;
+  padding: 1.75em .5em;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $lightBlack;
+  &:focus,
+  &:hover {color: $red;}
+  &:active {color: lighten($red, 5%);}
+}
+header li:first-child a {
+  background: $red;
+  color: #fff;
+  &:hover {color: #fff;}
+}
+/*Sections*/
+section {margin: 1em 0;}
+section h1 {text-transform: uppercase;}
+hr {
+  border-color: $lightGrey;
+  border-style: dashed;
+}
+.vertical {
+  width: 0;
+  height: 10px;
+}
+/*Intro*/
+.sec-intro {position: relative;}
+.sec-intro img {
+  width: 100%;
+}
+.sec-intro h1 {
+  position: absolute;
+  bottom: .5em;
+  left: .5em;
+  padding: .5em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+/*Boxes*/
+.box {
+  float: left;
+  padding: 1.5em 1em;
+  width: 25%;
+  height: 400px;
+  border-top: .1em solid $lightGrey;
+  border-bottom: .1em solid $lightGrey;
+  border-left: .1em solid $lightGrey;
+  @include transition(background);
+  &:focus,
+  &:hover {background: #f5f5f5;}
+}
+.box:last-child {border-right: .1em solid $lightGrey;}
+.box h1 {text-align: center;}
+.box p {
+  margin-top: 4em;
+  height: 6em;
+  text-align: justify;
+}
+.box .button {
+  margin: 4em auto;
+}
+/*Events*/
+.sec-events > h1 {margin-top: 1em;}
+.sec-events article {
+  float: left;
+  padding: 0 .25em;
+  width: 25%;
+  text-align: justify;
+}
+.sec-events article h1,
+.sec-events article p {
+  display: block;
+  margin: .5em 0;
+  padding: .25em 1em;
+  font-size: 110%;
+}
+.sec-events article a {float: right;padding-right: 1em;}
+.sec-events article h1 {font-weight: bold;text-align: center;}
+/*Projects*/
+.sec-projects {width: 60%;}
+.sec-projects > h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+.sec-projects article {
+  padding: .5em 0;
+  width: 100%;
+}
+.sec-projects article h1,
+.sec-projects article p {font-size: 110%;}
+.sec-projects article h1 {font-weight: bold;}
+.sec-projects article p {
+  margin: .5em .5em .5em 0;
+  text-align: justify;
+}
+.sec-projects p a {float: right;}
+.sec-projects button {
+  position: relative;
+  left: 80%;
+}
+/*Standards*/
+.sec-standards {width: 40%;}
+.sec-standards > h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+.sec-standards article {
+  float: left;
+  padding: .5em 1em;
+  width: 50%;
+  text-align: justify;
+}
+.sec-standards article:last-child {padding: .5em 0;}
+.sec-standards article h1 {text-align: center;}
+/*Partners*/
+.sec-partners h1 {margin-top: 1em;}
+.sec-partners .row {
+  float: left;
+  margin: 2em 0;
+  width: 100%;
+}
+.logo-container {
+  float: left;
+  width: 16%;
+  width: 100px;
+}
+.logo-container:not(:first-child) {margin-left: 7.5%;}
+.logo-container:first-child {margin-top: .2em;}
+.logo-container:nth-of-type(2) img {margin-top: 1.2em}
+.logo-container:nth-of-type(3) img {margin-top: 1.8em;}
+.logo-container:nth-of-type(4) img {margin-top: 2.35em;}
+.logo-container:nth-of-type(5) img {margin-top: .35em;}
+.logo-container:last-of-type img {margin-top: .65em;}
+.sec-partners img {
+  float: left;
+  width: 100%;
+}
+/*Footer*/
+footer {
+  padding: 2em 0;
+  width: 100%;
+  text-align: center;
+  background: $lightGrey;
+}
+footer .nav-ul {justify-content: center;margin-bottom: 1em;}
+footer li:not(:first-child) {margin-left: .75em;}
+footer li:first-child a {color: $lightBlack;}
+footer a {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: $darkGrey;
+  &:focus,
+  &:hover {color: $lightBlack;}
+}
+.copy {font-size: .85em;}
+
+#label1, #label2, #label3, #label4, #label5,
+#label6, #label7, #label8, #label9, #label10,
+#label11, #label12, #label13, #label14 {
+  position: relative;
+}
+
+/* Apply the following styles for each label-checkbox pair */
+
+#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5,
+#checkbox6, #checkbox7, #checkbox8, #checkbox9, #checkbox10,
+#checkbox11, #checkbox12, #checkbox13, #checkbox14 {
+  display: none;
+}
+
+#checkbox1:checked + #label1:after,
+#checkbox2:checked + #label2:after,
+#checkbox3:checked + #label3:after,
+#checkbox4:checked + #label4:after,
+#checkbox5:checked + #label5:after,
+#checkbox6:checked + #label6:after,
+#checkbox7:checked + #label7:after,
+#checkbox8:checked + #label8:after,
+#checkbox9:checked + #label9:after,
+#checkbox10:checked + #label10:after,
+#checkbox11:checked + #label11:after,
+#checkbox12:checked + #label12:after,
+#checkbox13:checked + #label13:after,
+#checkbox14:checked + #label14:after {
+  content: "[x]";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  font-family: 'Indie Flower';
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: normal;
+}
+.p {
+  font-size: 16px; /* You can adjust the value to your preference */
+  line-height: 1.5; /* Adjusting line height for better readability, optional */
+  margin-bottom: 10px; /* Adding some space between paragraphs, optional */
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+	<div class="aitsheaderw3ls" id="agilehome">
+
+		<!-- Navigation -->
+		<div class="agiletopbar">
+			<div class="wthreenavigation">
+				<div class="menu-wrap">
+					<nav class="menu">
+						<div class="icon-list">
+							<a class="scroll active" href="#agilehome"><i class="fa fa-home"></i><span>Home</span></a>
+							<a class="scroll" href="#about"><i class="fa fa-info"></i><span>About Me</span></a>
+							<a class="scroll" href="#skills"><i class="fa fa-bar-chart"></i><span>Skills</span></a>
+							<a class="scroll" href="#gallery"><i class="fa fa-picture-o"></i><span>Certificates</span></a>
+							<a class="scroll" href="#education"><i class="fa fa-book"></i><span>Education</span></a>
+						    <a class="scroll" href="#experience"><i class="fa fa-university"></i><span>Projects</span></a>
+							<a class="scroll" href="#experience"><i class="fa fa-university"></i><span>Goals</span></a>
+							<a class="scroll" href="#experience"><i class="fa fa-university"></i><span>Bucket List</span></a>
+							<a class="scroll" href="#experience"><i class="fa fa-university"></i><span>Social Activities</span></a>
+							<a class="scroll" href="#experience"><i class="fa fa-university"></i><span>SWOT Analysis</span></a>
+							<a class="scroll" href="#experience"><i class="fa fa-university"></i><span>Contact Me</span></a>
+
+						</div>
+					</nav>
+					<button class="close-button" id="close-button">Close Menu</button>
+				</div>
+				<button class="menu-button" id="open-button">Open Menu</button>
+			</div>
+			<div class="agileinfomenu">
+				<p>MENU</p>
+			</div>
+			
+			
+			<div class="wthreecontact">
+				<p><a class="scroll" href=""><i  aria-hidden="true"></i> </a></p>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+		<!-- //Navigation -->
+	</div>
+<!-- //Header -->
+
+<!-- Banner -->
+<div class="banner">
+	<div class="container">
+			<div class="w3_banner_info">
+				<div class="w3_banner_info_grid">
+					<h1>NEETHU SISUPAL SD</h1>
+					<h2 class="rw-sentence">
+					<span>"Find out who you are and do it on purpose" — Dolly Parton</span>
+				
+					</h2>
+					<ul class="social-nav model-3d-0 footer-social w3_agile_social">
+						<li><a href="https://wa.me/7034268741" class="facebook">
+							<div class="front"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-whatsapp" aria-hidden="true"></i></div></a>
+						</li>
+						<li><a href="https://github.com/NEETHUSISUPAL2001" class="pinterest"> 
+							<div class="front"><i class="fa fa-github" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-github" aria-hidden="true"></i></div></a>
+						</li>
+						<li><a href="https://instagram.com/_i_am_nxxthu_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram">
+							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+						</li>
+						<li><a href="http://www.linkedin.com/in/neethu7034" class="twitter">
+							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- //Banner -->
+
+<!-- About -->
+<div class="about" id="about">
+	<div class="container">
+		<h3 class="heading">About Me</h3>
+		<div class="col-md-6 aboutleft">
+			<img src="images/about.jpg" alt="" />
+		</div>
+		<div class="col-md-6 aboutright">
+		<div class="clients">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<h3>Personal information</h3>
+							<ul class="address">
+								<li>
+									<ul class="agileits-address-text ">
+										<li><b>D.O.B</b></li>
+										<li>7-10-2001</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>PHONE</b></li>
+										<li>(+91)7034268741</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>CITY</b></li>
+										<li>Trivandrum, Kerala</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>E-MAIL </b></li>
+										<li><a href="mailto:sisupalneethu@gmail.com">sisupalneethu@gmail.com</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>WEBSITE </b></li>
+										<li><a href="#">www.mywebsite.com</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+							<ul class="hireme">
+								
+								<li><a href="https://github.com/NEETHUSISUPAL2001/My-CV/blob/main/CV%20Neethu.pdf"  target="_blank" class="w3l_contact"><i class="fa fa-download" aria-hidden="true"></i> Download CV</a></li>
+							</ul>
+						</li>
+							<li>
+							<h3>Hi, Iam Neethu Sisupal SD</h3>
+							<h4>Whats up!</h4>
+							<p>I'm an aspiring tech professional, currently pursuing a Master's in Artificial Intelligence at Kerala University.Im hailing from Balaramapuram, Trivandrum, Kerala, and im passionate about leveraging technology for impactful solutions.
+ My background includes a Bachelor's in Computer Applications (BCA) with a consistent academic record exceeding 75%.
+
+Skilled in HTML, CSS, and JavaScript, I create visually appealing websites. My focus is on becoming proficient in Python for AI applications. I've led teams, refining my communication and leadership abilities.
+
+I've undertaken notable projects during my BCA, including a Student Result Management System streamlining processes, and a Farmers' Information System, reflecting my commitment to real-world problem-solving.
+
+Eager to connect with fellow professionals, I'm enthusiastic about opportunities in front-end development and Python's vast potential in AI and beyond.</p>
+							
+						</li>
+					</ul>
+				</div>
+			</section>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- About -->
+
+<!-- Skills -->
+<section class="skills" id="skills">
+	<div class="container">
+			<h3 class="heading">Skills</h3>
+		<div class='col-md-8 bar'>
+		
+			<div class="col-md-6 group">
+				<div class='bar_left'>
+					<div class='bar_group'>
+						<div class='bar_group__bar thin' label='CSS' show_values='true' value='70'></div>
+						<div class='bar_group__bar thin' label='HTML' show_values='true' value='100'></div>
+						<div class='bar_group__bar thin' label='Python' show_values='true' value='75'></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 group">
+				<div class='bar_right'>
+					<div class='bar_group'>
+						<div class='bar_group__bar thin' label='Power Point' show_values='true' value='85'></div>
+						<div class='bar_group__bar thin' label='Power BI' show_values='true' value='80'></div>
+						<div class='bar_group__bar thin' label='Database' show_values='true' value='50'></div>
+					</div>
+				</div>
+			</div>
+			<div class='clearfix'></div>
+		</div>
+		
+		<div class='clearfix'></div>
+	</div>
+</section>
+<!-- //Skills -->
+
+<!-- gallery -->
+	<div id="gallery" class="gallery">
+		<h3 class="heading">Portfolio</h3>
+			<div class="gallery-info">
+				<div class="col-md-3 gallery-grids">
+					<a href="images/gallery1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery1.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids">
+					<a href="images/gallery2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery2.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids">
+					<a href="images/gallery3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery3.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids">
+					<a href="images/gallery4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery4.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/gallery5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery5.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/gallery6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery6.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/gallery7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery7.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/gallery8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/gallery8.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+				
+				<br><br><br>
+				<div class="clearfix"> </div>	
+			</div>
+		<script src="js/lightbox-plus-jquery.min.js"></script>
+	</div>
+<!-- //gallery -->
+
+<!-- Education -->
+<div class="education" id="education">
+	<div class="container">
+			<h3 class="heading">Education</h3>
+		<div class="col-md-6">
+			<div class="grid1">
+				<h3>MSC CS specialized in Artificial Intelligence </h3>
+				<p>Currently Pursuing my Master degree in Artificial Intelligence at Kariyavattom Campus </p>
+				<h4>University of Kerala</h4>
+				<h4><b>Year</b> : 2023-2025</h4>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="grid1">
+				<h3>Degree in BCA</h3>
+				<p>I completed my Bachelor of Computer Application (BCA) with a commendable 76.73% </p>
+				<h4>UIT Kanjiramkulam</h4>
+				<h4><b>Year</b> : 2020-2023</h4>
+			</div>
+		</div>
+		<div class='clearfix'></div>
+		<div class="educationbottom">
+			<div class="col-md-6">
+				<div class="grid1">
+					<h3>Higher Secondary Education</h3>
+					<p>Successfully completed my Higher Secondary Education in Bio Science with an outstanding 75%</p>
+						<h4>Govt. GHSS Balaramapuram</h4>
+					<h4><b>Year</b> : 2018-2020</h4>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="grid1 lastgrid">
+					<h3>SSLC</h3>
+					<p>I completed my Secondary School Leaving Certificate (SSLC) with an exceptional 94%</p>
+						<h4>St. Chrysostoms`s GHSS Nellimoodu</h4>
+					<h4><b>Year</b> : 2017-2018</h4>
+				</div>
+			</div>
+			<div class='clearfix'></div>
+		</div>
+	</div>
+</div>
+<!-- //Education -->
+<div class="count-agileits" id="stats">
+<h3 class="heading">PROJECTS</h3>
+	<div>
+	<div class="col-md-3 gallery-grids">
+					<a href="images/home.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/home.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<h3 style="color:white"><a href="https://github.com/NEETHUSISUPAL2001/Farmer-Informant-Major-Project-in-UG">Farmers Informent</a></h3>
+					<p style="color:white">An application designed to assist farmers in choosing suitable crops based on their location's pincode. 
+					It also offers a marketplace for buying farming supplies.</p>
+    </div>
+	</div><div>
+	<div class="col-md-3 gallery-grids">
+					<a href="images/home2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/home2.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<h3 style="color:white"><a href="https://github.com/NEETHUSISUPAL2001/Student-Result-Management-System">Student Result System</a></h3>
+
+					<p style="color:white">Empower your institution with a robust Student Result Management System, 
+					simplifying data handling and enhancing academic oversight for impactful student success</p>
+	</div></div>
+</div>
+<!-- Work experience -->
+<br><br>
+<center>
+<h3 class="heading" style="width: 20%;font-size: 33px;">Goals</h3>
+</center>
+<div class="experience" id="experience">
+
+    <div class="container">
+	    <div class="col-md-6">
+			<div class="grid1">
+				<h3><i class="fa fa-goal" aria-hidden="true"></i> Short Term Goals</h3>
+				<p><ul>
+				<li>Gaining experience in leadership and TeamBuilding</li>
+				<li>Learning new set of skills</li>
+				<li>Practise Publice speaking</li>
+				<li>Obtain a new Certification</li>
+				<li>Practise saying "NO"</li>
+				<li>Begin gym sessions for better health</li>
+				<li>Revise and Update my Resume/Portfolio/Studies</li>
+				<li>Go for a picnic</li></ul>
+				</p>
+				
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="grid1">
+<h3><i class="fa fa-goal" aria-hidden="true"></i> Long Term Goals</h3>
+				<p><ul>
+				<li>Crack the Interviews</li>
+				<li>Get a Good Job</li>
+				<li>International Trips</li>
+				<li>AI-Driven Innovations</li>
+				<li>Be a Data Analyst</li>
+				<li>Personal Development</li>
+				<li>Build a WOW Home</li>
+				<li>Achieve work-life balance</li></ul>
+				</p>
+				
+			</div>
+		</div>
+		<div class='clearfix'></div>
+		<div class="educationbottom">
+			
+			
+			<div class='clearfix'></div>
+		</div>
+	</div>
+</div>
+<!--buckEt-->
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+  <style>
+    .title {font-family: 'Pacifico', sans-serif;  
+      font-size: 64px;
+        margin: 50px;
+    }
+    .list {font-family: 'Indie Flower';
+           font-size: 32px;
+      list-style-type: none;
+      }
+    .normal {font-weight: normal}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<h3 class="heading" style="width: 20%;font-size: 33px;">Bucket List</h3>
+
+  <ul class="list text-center">
+    <li> <input type="checkbox" id="checkbox1" />
+      <label class="normal" id="label1" for="checkbox1"  style="font-size:30px">[]</label><label style="font-size:20px"> International Trips</label></li>
+    <li> <input type="checkbox" id="checkbox2" />
+      <label class="normal" id="label2" for="checkbox2" style="font-size:30px">[]</label> <label style="font-size:20px">Learn a Third Language</label> </li>
+    <li> <input type="checkbox" id="checkbox3" />
+      <label class="normal" id="label3" for="checkbox3" style="font-size:30px">[]</label> <label style="font-size:20px">Skydiving or Paragliding</label></li>
+   <li> <input type="checkbox" id="checkbox4" />
+      <label class="normal" id="label4" for="checkbox4" style="font-size:30px">[]</label><label style="font-size:20px">Achieve Fitness Milestones</label> </li>
+   <li> <input type="checkbox" id="checkbox5" />
+      <label class="normal" id="label5" for="checkbox5" style="font-size:30px">[]</label> <label style="font-size:20px">Develop a New Skill</label></li>
+   <li> <input type="checkbox" id="checkbox6" />
+      <label class="normal" id="label6" for="checkbox6" style="font-size:30px">[]</label> <label style="font-size:20px">See the Northern Lights </label></li>
+   <li> <input type="checkbox" id="checkbox7" />
+      <label class="normal" id="label7" for="checkbox7" style="font-size:30px">[]</label> <label style="font-size:20px">Conquer a Fear</label></li>
+   <li> <input type="checkbox" id="checkbox8" />
+      <label class="normal" id="label8" for="checkbox8" style="font-size:30px">[]</label> <label style="font-size:20px">Food Tour</label> </li>
+    
+  </ul>
+<br><br>
+
+<div class="count-agileits" id="stats">
+<h3 class="heading" style="width: 20%;font-size: 31px;">Social Activities</h3>
+	<div>
+	<div class="col-md-3 gallery-grids">
+					<a href="images/galler2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/galler2.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<h3 style="color:blue">National Service Scheme</h3>
+					<br>
+					<p style="color:white">Two years of dedicated service with NSS: actively engaging, leading, and creating positive 
+					change within communities, leaving a lasting mark through commitment and action</p>
+    </div>
+	</div><div>
+	<div class="col-md-3 gallery-grids">
+					<a href="images/red.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/red.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<h3 style="color:blue">Junior Red Cross</h3>
+					<br>
+					<p style="color:white">For four years, I've proudly served with the Red Cross, extending a helping hand where it matters most and 
+					discovering firsthand the incredible strength found in acts of compassion</p>
+	</div></div>
+</div>
+<br>
+<br>
+<!-- //Work experience -->
+<div class="line"></div>
+<div class="wrapper">
+  <header></header>
+  <main role="main">
+    <div style="text-align: center;">
+      <h3 class="heading">SWOT</h3>
+    </div>
+    <div class="line"></div>
+    <section class="sec-boxes" role="section">
+      <article class="box">
+        <h1 style="font-size:25px">Strength</h1>
+	<p style="text-align:center" "font-size:21px">
+				Creativity
+				Communication
+				Active Participation
+				good listener
+				Adaptability</p>
+				
+      </article>
+      <article class="box">
+        <h1 style="font-size:25px">Weakness</h1>
+<p style="text-align:center">
+				Impatience
+				Saying "NO"
+				Procastination
+				Lack of Confidence
+				Insecure</p>
+				      </article>
+      <article class="box">
+        <h1 style="font-size:25px">Opportunity</h1>
+		<p style="text-align:center">
+				Interships
+				Diverse career paths
+				Networking
+				Graduation
+				Industry Certifications</p>
+				
+      </article>
+      <article class="box">
+        <h1 style="font-size:25px">Threat</h1>
+<p style="text-align:center">
+				Financial constraints
+				Health problems
+				Academic pressure
+				Skill gap/Risk
+				Sallary expectations
+				</p>
+				      </article>
+    </section>
+    <hr />
+  </main>
+  <br><br>
+</div>
+
+<!-- Continue with your HTML content here -->
+<!--<div class="contact" id="contact">
+	<div class="container">
+		<h3 class="heading" style="width: 20%;font-size: 33px;">Contact Me</h3>
+		<div class="col-md-4 address">
+			<h3>Address</h3>
+			<div class="mail-agileits-w3layouts">
+				<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+				<div class="contact-right">
+					<p>Phone</p><span>(+91)7034268741</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="mail-agileits-w3layouts">
+				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+				<div class="contact-right">
+					<p>Email</p><a href="mailto:sisupalneethu@gmail.com">sisupalneethu@gmail.com</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="mail-agileits-w3layouts">
+				<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+				<div class="contact-right">
+					<p>Address</p><span>Nithin Bhavan Mangalathukonam Kattachelkuzhi P.O Balaramapuram, Trivandrum</span> 
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		<div class="col-md-4 form">
+			<form action="#" method="post">
+				<div class="fields-grid">
+					<div class="styled-input agile-styled-input-top">
+						<input type="text" name="First name" required=""> 
+						<label>Full Name</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<input type="email" name="Email" required="">
+						<label>Email</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<input type="tel" name="Phone" required="">
+						<label>Phone Number</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<textarea name="Message" required=""></textarea>
+						<label>Message</label>
+						<span></span>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<input type="submit" value="SEND">
+			</form>
+
+		</div>
+		<!--<div class="col-md-4 map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.33437743319!2d103.8212862717648!3d1.3766002857431643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16c40ac82661%3A0x500f7acaedaa550!2sAng+Mo+Kio%2C+Singapore!5e0!3m2!1sen!2sin!4v1497852510740"></iframe>
+		</div>-->
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div id="backgroundVideoDiv" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+  <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="images/videohah.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Thank You and LinkedIn Overlay -->
+  <div id="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;">
+    <div id="thankYouText" style="font-size: 30px; margin-bottom: 20px;">Thank you for visiting!</div>
+    <div id="linkedinText" style="font-size: 20px;">Connect with me on <a id="linkedinLink" style="color: white; text-decoration: underline;" href="your-linkedin-profile-link" target="_blank">LinkedIn</a></div>
+  </div>
+</div>
+
+
+
+
+      
+<!-- Technical Skills -->
+
+
+
+<!-- Technical Skills -->
+
+<!-- contact -->
+
+
+<!-- //contact -->
+
+<!-- //footer -->
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+
+<script type="text/javascript" src="js/numscroller-1.0.js"></script><!-- numscroller js file -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script -->
+
+<!-- //here starts scrolling icon -->
+<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling script -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling script -->
+<!-- //here ends scrolling icon -->
+
+<!-- Navigation-JavaScript -->
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+<!-- //Navigation-JavaScript -->
+		
+<!-- FlexSlider-JavaScript -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+			});
+		});
+	</script>
+<!-- //FlexSlider-JavaScript -->
+
+<!-- bars js files -->
+	<script src="js/bars.js"></script>
+<!-- //bars js files -->
+
+<!-- banner text effect js file -->
+	<script src="js/modernizr.custom.72111.js"></script>
+<!-- banner text effect js file -->
+
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
